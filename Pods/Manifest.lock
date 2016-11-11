@@ -1,0 +1,62 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.2.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AZSClient (0.2.2)
+  - DZNEmptyDataSet (1.8.1)
+  - FSQCollectionViewAlignedLayout (1.1.1)
+  - HMSegmentedControl (1.5.3)
+  - NSDate+TimeAgo (1.0.6)
+  - PureLayout (3.0.2)
+  - REFrostedViewController (2.4.8)
+  - SBJson4 (4.0.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.0.3)
+  - TPKeyboardAvoiding (1.3)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.2)
+  - AFNetworking (~> 3.0)
+  - AZSClient
+  - DZNEmptyDataSet
+  - FSQCollectionViewAlignedLayout (~> 1.1)
+  - HMSegmentedControl
+  - NSDate+TimeAgo (~> 1.0)
+  - PureLayout (~> 3.0)
+  - REFrostedViewController (~> 2.4)
+  - SBJson4 (~> 4.0)
+  - SDWebImage (~> 3.8)
+  - SVProgressHUD
+  - TPKeyboardAvoiding (~> 1.3)
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AZSClient: 469db5162a0e59cc764715b233794e26ade29736
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FSQCollectionViewAlignedLayout: 122006b230bf5635ae159f1ad1eaa9b5ef11391e
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  NSDate+TimeAgo: 35601c619b2d59290055e4fe76e61d97677a2360
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+  SBJson4: b64afe0d4607e9e339b6d7538b04611e756f71db
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+
+COCOAPODS: 0.39.0

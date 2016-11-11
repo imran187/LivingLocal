@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tq2-FI-C3a" customClass="FilterView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhW-Ot-QPO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epx-Ph-XSW" customClass="LLButton">
+                            <rect key="frame" x="556" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="9sI-ih-zxI"/>
+                                <constraint firstAttribute="width" constant="44" id="uSM-DQ-3Of"/>
+                            </constraints>
+                            <state key="normal" image="cancel"/>
+                            <connections>
+                                <action selector="closePressed:" destination="tq2-FI-C3a" eventType="touchUpInside" id="KIm-OR-mIr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Categroies in Timeline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDU-i6-UD3" customClass="LLLabel">
+                            <rect key="frame" x="216" y="14" width="166" height="16"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1333333333" green="0.46274509800000002" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hDU-i6-UD3" firstAttribute="centerX" secondItem="vhW-Ot-QPO" secondAttribute="centerX" constant="-1.5" id="CnC-uM-NaB"/>
+                        <constraint firstAttribute="trailing" secondItem="Epx-Ph-XSW" secondAttribute="trailing" id="Lsz-VN-xiR"/>
+                        <constraint firstAttribute="bottom" secondItem="hDU-i6-UD3" secondAttribute="bottom" constant="14" id="kfp-4j-CZj"/>
+                        <constraint firstAttribute="height" constant="44" id="sgu-ct-08a"/>
+                        <constraint firstItem="Epx-Ph-XSW" firstAttribute="centerY" secondItem="vhW-Ot-QPO" secondAttribute="centerY" id="xkR-ja-ixk"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmD-fO-Kdb" customClass="LLButton">
+                    <rect key="frame" x="260" y="485" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="1KA-4c-xJ9"/>
+                        <constraint firstAttribute="width" constant="75" id="Tll-hi-SdB"/>
+                    </constraints>
+                    <state key="normal" image="done"/>
+                    <connections>
+                        <action selector="donePressed:" destination="tq2-FI-C3a" eventType="touchUpInside" id="EOa-7j-uFE"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-W2-MpR" customClass="FilterCollectionView">
+                    <rect key="frame" x="5" y="74" width="590" height="414"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sG3-GK-DgK" customClass="FSQCollectionViewAlignedLayout">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.1450980392" green="0.14901960780000001" blue="0.1529411765" alpha="0.95999999999999996" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3BJ-W2-MpR" secondAttribute="trailing" constant="5" id="20c-I0-PiC"/>
+                <constraint firstAttribute="trailing" secondItem="vhW-Ot-QPO" secondAttribute="trailing" id="3gL-zq-GqR"/>
+                <constraint firstItem="BmD-fO-Kdb" firstAttribute="centerX" secondItem="tq2-FI-C3a" secondAttribute="centerX" constant="-2.5" id="CS8-AO-Wqz"/>
+                <constraint firstItem="vhW-Ot-QPO" firstAttribute="leading" secondItem="tq2-FI-C3a" secondAttribute="leading" id="MiW-ap-jVc"/>
+                <constraint firstItem="BmD-fO-Kdb" firstAttribute="top" secondItem="3BJ-W2-MpR" secondAttribute="bottom" constant="-3" id="PQj-dX-06e"/>
+                <constraint firstAttribute="bottom" secondItem="BmD-fO-Kdb" secondAttribute="bottom" constant="40" id="Qqc-fr-zuX"/>
+                <constraint firstItem="BmD-fO-Kdb" firstAttribute="top" secondItem="3BJ-W2-MpR" secondAttribute="bottom" constant="30" id="SUH-VB-ORG"/>
+                <constraint firstItem="3BJ-W2-MpR" firstAttribute="top" secondItem="vhW-Ot-QPO" secondAttribute="bottom" constant="30" id="cIu-bk-NY8"/>
+                <constraint firstItem="vhW-Ot-QPO" firstAttribute="top" secondItem="tq2-FI-C3a" secondAttribute="top" id="p8B-LT-6Tn"/>
+                <constraint firstItem="3BJ-W2-MpR" firstAttribute="leading" secondItem="tq2-FI-C3a" secondAttribute="leading" constant="5" id="w7U-3b-uGs"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="SUH-VB-ORG"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="colFilters" destination="3BJ-W2-MpR" id="jnA-xW-wkh"/>
+                <outlet property="lblTitle" destination="hDU-i6-UD3" id="dm4-5Y-94s"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="15" height="15"/>
+        <image name="done" width="94" height="94"/>
+    </resources>
+</document>
